@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alam Trans - Jasa Sewa Mobil Terbaik</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <style>
+        .hero-section-img {
+            /* GANTI URL INI DENGAN PATH KE GAMBAR MOBIL ASLI ANDA */
+            background-image: url('rental-mobil-hiace.png'); 
+            background-size: cover;
+            background-position: center;
+            height: 400px; /* Atur ketinggian sesuai kebutuhan */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero-section-img::before {
+            /* Overlay Gelap agar Teks Terlihat Jelas */
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.4); /* Opasitas 40% */
+        }
+        .hero-content {
+            z-index: 10; /* Pastikan konten di atas overlay */
+            color: white; /* Pastikan teks berwarna putih */
+        }
+        .section-padding {
+            padding: 60px 0;
+        }
+        
+        /* CSS KHUSUS UNTUK LOGO BIRU */
+        .navbar-brand-custom {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem; 
+        }
+        .navbar-brand-custom i {
+            color: #4dc2f5; /* Warna biru muda untuk icon mobil */
+            margin-right: 8px;
+        }
+        .navbar-brand-custom .text-brand {
+            color: white; /* Warna nama brand agar kontras dengan navbar bg-primary */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand navbar-brand-custom" href="#">
+                <i class="bi bi-car-front-fill"></i> 
+                <span class="text-brand">Alam Trans</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#layanan">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#armada">Armada</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section-img">
+        <div class="container hero-content">
+            <h1 class="display-3 fw-bold">Jasa Sewa Mobil Terpercaya</h1>
+            <p class="lead text-shadow">Alam Trans: Pilihan Tepat untuk Perjalanan Bisnis dan Liburan Anda.</p>
+            <a href="#armada" class="btn btn-light btn-lg mt-3 me-2 fw-bold">Lihat Armada Kami</a>
+            <a href="https://wa.me/nomorwhatsappanda" class="btn btn-success btn-lg mt-3 fw-bold" target="_blank">Hubungi Via WhatsApp</a>
+        </div>
+    </header>
+
+    <section id="layanan" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-primary">Layanan Terbaik Alam Trans</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100 p-3">
+                        <div class="card-body">
+                            <i class="bi bi-calendar-check-fill text-info fs-1 mb-3"></i>
+                            <h5 class="card-title fw-bold">Sewa Harian & Mingguan</h5>
+                            <p class="card-text">Fleksibilitas penuh untuk kebutuhan perjalanan jangka pendek Anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100 p-3">
+                        <div class="card-body">
+                            <i class="bi bi-person-badge-fill text-info fs-1 mb-3"></i>
+                            <h5 class="card-title fw-bold">Dengan Driver Profesional</h5>
+                            <p class="card-text">Perjalanan nyaman, Anda fokus pada tujuan, kami yang mengemudi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow-sm h-100 p-3">
+                        <div class="card-body">
+                            <i class="bi bi-airplane-fill text-info fs-1 mb-3"></i>
+                            <h5 class="card-title fw-bold">Antar-Jemput Bandara</h5>
+                            <p class="card-text">Layanan cepat dan tepat waktu dari dan menuju bandara.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="armada" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-primary">Armada Pilihan Kami</h2>
+            <div class="row justify-content-center">
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="images/avanza.png" class="card-img-top" alt="Mobil Avanza">
+                        <div class="card-body">
+                            <span class="badge bg-success float-end">Rp 350.000</span>
+                            <h5 class="card-title fw-bold">Toyota Avanza</h5>
+                            <p class="card-text text-muted mb-1"><i class="bi bi-person-fill"></i> 7 Seater</p>
+                            <p class="card-text text-muted"><i class="bi bi-fuel-pump-fill"></i> Bensin</p>
+                            <a href="https://wa.me/nomorwhatsappanda" class="btn btn-primary btn-sm w-100 mt-2">Pesan Avanza</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="images/Innova.png" class="card-img-top" alt="Mobil Innova">
+                        <div class="card-body">
+                            <span class="badge bg-success float-end">Rp 550.000</span>
+                            <h5 class="card-title fw-bold">Toyota Innova Reborn</h5>
+                            <p class="card-text text-muted mb-1"><i class="bi bi-person-fill"></i> 7 Seater</p>
+                            <p class="card-text text-muted"><i class="bi bi-fuel-pump-fill"></i> Diesel/Bensin</p>
+                            <a href="https://wa.me/nomorwhatsappanda" class="btn btn-primary btn-sm w-100 mt-2">Pesan Innova</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card shadow h-100">
+                        <img src="images/Hiace.jpeg" class="card-img-top" alt="Mobil Hiace">
+                        <div class="card-body">
+                            <span class="badge bg-warning float-end">Hubungi</span>
+                            <h5 class="card-title fw-bold">Toyota Hiace Commuter</h5>
+                            <p class="card-text text-muted mb-1"><i class="bi bi-person-fill"></i> 14 Seater</p>
+                            <p class="card-text text-muted"><i class="bi bi-fuel-pump-fill"></i> Diesel</p>
+                            <a href="https://wa.me/nomorwhatsappanda" class="btn btn-primary btn-sm w-100 mt-2">Pesan Hiace</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#kontak" class="btn btn-outline-primary">Lihat Semua Tarif</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold text-primary">Hubungi Kami</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center">Dapatkan penawaran terbaik dan ketersediaan mobil cepat melalui saluran berikut:</p>
+                    <ul class="list-unstyled text-center mb-4">
+                        <li class="mb-2"><i class="bi bi-whatsapp fs-5 text-success"></i> **WhatsApp:** <a href="https://wa.me/0812XXXXXXXX" target="_blank" class="text-decoration-none">0812-XXXX-XXXX</a></li>
+                        <li class="mb-2"><i class="bi bi-envelope-fill fs-5 text-primary"></i> **Email:** info@alamtrans.com</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt-fill fs-5 text-danger"></i> **Alamat:** [jl.gajah raya no:120A Gayamsari, Kota Semarang,Jawa Tenagah 50249
+
+]</li>
+                    </ul>
+                    
+                    <form class="p-4 border rounded shadow-sm bg-white">
+                        <div class="mb-3">
+                            <label for="nama" class="form-label">Nama Lengkap</label>
+                            <input type="text" class="form-control" id="nama" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="tanggal" class="form-label">Tanggal Sewa</label>
+                            <input type="date" class="form-control" id="tanggal" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="jenisMobil" class="form-label">Jenis Mobil Diinginkan</label>
+                            <select class="form-select" id="jenisMobil">
+                                <option selected>Pilih salah satu</option>
+                                <option value="avanza">Avanza</option>
+                                <option value="innova">Innova</option>
+                                <option value="hiace">Hiace</option>
+                                <option value="lain">Lain-lain</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 fw-bold">Kirim Permintaan Cepat</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="bg-dark text-white pt-4 pb-2">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <h5 class="text-uppercase fw-bold text-warning">Alam Trans</h5>
+                    <p>Melayani penyewaan mobil yang aman, nyaman, dan terjangkau untuk semua jenis perjalanan Anda.</p>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-uppercase fw-bold">Info</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#layanan" class="text-white text-decoration-none">Layanan Kami</a></li>
+                        <li><a href="#armada" class="text-white text-decoration-none">Cek Armada</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Syarat & Ketentuan</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <h5 class="text-uppercase fw-bold">Kontak</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://wa.me/nomorwhatsappanda" class="text-white text-decoration-none"><i class="bi bi-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="#" class="text-white text-decoration-none"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p>&copy; 2025 Alam Trans. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
